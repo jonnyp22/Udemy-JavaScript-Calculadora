@@ -1,0 +1,74 @@
+.campo{
+    border:  #C5C5C5 1px solid;
+}
+button {
+    font-family: monospace;
+    background-color: #f3f7fe;
+    color: #3b82f6;
+    border: none;
+    border-radius: 8px;
+    width: 100px;
+    height: 45px;
+    transition: .3s;
+  }
+  
+  button:hover {
+    background-color: #3b82f6;
+    box-shadow: 0 0 0 5px #3b83f65f;
+    color: #fff;
+  }
+  .limpiado {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f3f7fe;
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(55, 40, 84, 0.164);
+    cursor: pointer;
+    transition-duration: .3s;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .svgIcon {
+    width: 12px;
+    transition-duration: .3s;
+  }
+  
+  .svgIcon path {
+    fill: #3b82f6;
+  }
+  
+  .limpiado:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: .3s;
+    background-color: rgb(252, 214, 0);
+    align-items: center;
+  }
+  
+  .limpiado:hover .svgIcon {
+    width: 50px;
+    transition-duration: .3s;
+    transform: translateY(60%);
+  }
+  
+  .limpiado::before {
+    position: absolute;
+    top: -20px;
+    content: "Limpiar";
+    color: #3b82f6;
+    transition-duration: .3s;
+    font-size: 2px;
+  }
+  
+  .limpiado:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    transform: translateY(30px);
+    transition-duration: .3s;
+  }
